@@ -1,0 +1,73 @@
+/* common css styling start from here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #dbdbdb;
+  --text-white: #ffffff;
+  --text-secondary: #888888;
+  --bg-global: #000000;
+  --font-roboto: "Roboto", sans-serif;
+  --font-cursive: "Croissant One", cursive;
+}
+li {
+  list-style: none;
+}
+a,
+.text-deco-none {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  letter-spacing: 0.5px;
+  font-family: var(--font-roboto);
+}
+body {
+  width: 100vw;
+  max-height: auto;
+  overflow-x: hidden;
+  background-color: var(--bg-global);
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.opacity-hover {
+  transition: all 0.23s linear;
+}
+.opacity-hover:hover {
+  opacity: 0.7;
+}
+.btn {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--text-color);
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.spinner-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  width: 50px;
+  background-color: #888888;
+}
+/*  common css styling ends here */

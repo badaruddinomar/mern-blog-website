@@ -1,0 +1,96 @@
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--bg-global);
+  padding: 1rem 5rem;
+  border-bottom: 1px solid rgba(233, 224, 224, 0.362);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  /* here flex comming from main.css by classname */
+  justify-content: space-between;
+}
+
+nav .logo .logo-link {
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 0.8px;
+  font-family: var(--font-cursive);
+}
+
+nav .link {
+  font-size: 18px;
+  color: white;
+  margin: 0 1rem;
+  letter-spacing: 0.7px;
+}
+nav .user-avatar {
+  justify-content: center;
+}
+nav .nav-user-info {
+  justify-content: center;
+  cursor: pointer;
+}
+nav .user-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px 1rem;
+}
+nav .user-avatar .username {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.7px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+nav .nav-user-info .burger .menu-icon {
+  font-size: 4rem;
+  color: white;
+  display: none;
+}
+nav .menubar {
+  width: 200px;
+  background-color: var(--bg-global);
+  border: 1px solid rgba(233, 224, 224, 0.362);
+  border-top: none;
+  padding: 1rem;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: absolute;
+  top: 10vh;
+  right: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.23s linear;
+}
+nav .menubar .link {
+  margin: 1rem;
+}
+nav .menubar.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  nav .login,
+  nav .logout,
+  nav .create-post,
+  nav .register {
+    display: none;
+  }
+  nav {
+    padding: 1rem 2rem;
+  }
+  nav .nav-user-info .burger .menu-icon {
+    display: block;
+  }
+}

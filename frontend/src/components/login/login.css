@@ -1,0 +1,47 @@
+.login {
+  width: 100%;
+  padding: 0 2rem;
+
+  /* flex comming from main.css by classname */
+  justify-content: center;
+  flex-direction: column;
+}
+.login .login-header {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  margin: 3rem 0;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+.login form {
+  width: 350px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login form .form-controller {
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.login form .form-controller label {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+.login form .form-controller input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 350px) {
+  .login form {
+    width: 100%;
+  }
+}

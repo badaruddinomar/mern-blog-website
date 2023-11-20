@@ -1,0 +1,50 @@
+.user-detail {
+  width: 100%;
+  padding: 0 2rem;
+
+  /* flex comming from main.css by classname */
+  justify-content: center;
+  flex-direction: column;
+}
+.user-detail h3 {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  margin: 3rem 0;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.user-detail form {
+  width: 350px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-detail form .form-controller {
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.user-detail form .form-controller label {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+.user-detail form .form-controller input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.user-detail form .avatar input {
+  background-color: white;
+}
+@media (max-width: 350px) {
+  .user-detail form {
+    width: 100%;
+  }
+}

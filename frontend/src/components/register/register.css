@@ -1,0 +1,48 @@
+.register {
+  width: 100%;
+  padding: 0 2rem;
+  /* flex comming from main.css by classname */
+  justify-content: center;
+  flex-direction: column;
+}
+.register h4 {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  margin: 3rem 0;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.register form {
+  width: 350px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register form .form-controller {
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.register form .form-controller label {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+.register form .form-controller input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+}
+.register form .avatar input {
+  background-color: white;
+}
+@media (max-width: 350px) {
+  .register form {
+    width: 100%;
+  }
+}

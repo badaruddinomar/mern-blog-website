@@ -1,0 +1,33 @@
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.23s ease-in-out;
+  position: relative;
+}
+.toast p {
+  position: fixed;
+  top: 10vh;
+  background: cornsilk;
+  padding: 1rem 2rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+
+  font-size: 16px;
+}
+.toast.success i {
+  margin-right: 6px;
+  font-size: 16px;
+  color: rgb(21, 212, 21);
+}
+.toast.error i {
+  margin-right: 5px;
+  font-size: 16px;
+  color: red;
+}
+/* <i class="fa-solid fa-circle-check"></i> */
+/* <i class="fa-solid fa-circle-xmark"></i> */
