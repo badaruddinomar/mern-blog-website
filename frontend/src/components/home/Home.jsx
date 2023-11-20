@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 // import { backendUrl } from "./../helper";
 import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
-import SearchBar from "../searchBar/searchBar";
+import SearchBar from "../searchBar/SearchBar";
 import Posts from "../posts/Posts";
 
 const Home = () => {
