@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import SearchBar from "../searchBar/searchBar";
+import SearchBar from "../searchBar/SearchBar";
 import Posts from "../posts/Posts";
 
 const SearchTearm = () => {
